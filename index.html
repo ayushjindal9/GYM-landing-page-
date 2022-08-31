@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body{
+            font-family: 'Pushster', cursive;
+            color: whitesmoke;
+            margin: 0px;
+            padding: 0px;
+            background: url("img/girl.jpg");
+            
+        }
+        .left{
+            display: inline-block;
+            
+            position:absolute;
+            left: 54px;
+            top: 18px;
+        }
+        .left img{
+            width: 100px;
+            filter: invert(100%);
+            padding: 20px;
+
+        }
+        .left div{
+            text-align: center;
+            line-height: 10px;
+            font-size: 90;
+        
+        
+        }
+        .mid{
+            
+            display: block;
+            width: 50%;
+            margin: 18px auto;
+            
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 33px;
+            display: inline-block;
+            
+        }
+        .navbar{
+            display: inline-block;
+
+        }
+        .navbar li{
+            
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 34px;
+            
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: gray;
+
+        }
+        .btn{
+            margin: 0px 0px;
+            background-color: black;
+            color: whitesmoke;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Pushster', cursive;
+          
+        }
+        .btn:hover{
+            background-color: rgb(109, 64, 64);
+        }
+        .container{
+        border: 2px solid whitesmoke;
+        margin: 102px 127px;
+        padding: 53px;
+        width: 33%;
+        border-radius: 29px;
+        }
+        
+        .form-group input{
+            text-align: center;
+    display: block;
+    width: 410px;
+    padding: 6px;
+    border: 2px solid black;
+    margin: 11px auto;
+    border-radius: 8px;
+    font-family: 'Pushster', cursive;
+}
+.container h1{
+    text-align: center;
+
+}
+.container button{
+    display: block;
+    width: 83%;
+    margin: 15px auto;
+
+}
+}
+
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box for logo   -->
+        <div class="left">
+          <img src="img\dumbbel.png" alt="">
+          <div>World of Fit's</div>
+          
+        </div>
+        <!--Mid for nav bar  -->
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now!!!</button>
+            <button class="btn">Email Us</button>
+
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join th best Gym now...!! in your city!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone NUmber">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email ID">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
